@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<page id="examination">
+		<scripts>
+			<script src="lua/controller/examination.lua" />
+		</scripts>
+
+		<layout backgroundColor="#ffffff" paddingTop="0" overflow="hidden" fullScreen="false">
+			<image src="images/exam/exam_bg.jpg" scale="fitWidth" margin="0 0 auto 0"></image>
+      <scrollview id="sv" margin="0 0 0 0" >
+        <view height="44" id="nav" marginTop="20">
+					<view margin="auto">
+						<label text="" id="title" fontSize="16" color="#333333" align="center"/>
+					</view>
+					<view marginLeft="14" width="30">
+						<image src="images/back.png" width="20" margin="12 auto auto auto" scale="fitWidth"/>
+						<button id="backBtn"></button>
+					</view>
+          <view id="progressbar" marginTop="88 25 auto 25">
+            <label text="进度" fontSize="15" color="#333333" align="center" margin="0 auto 0 0"/>
+            <view margin="3 0 3 40" cornerRadius="8" backgroundColor="#ffffff" >
+              <view id="pb_bar" margin="0 auto 0 0" width="1" backgroundColor="#ff5c8d"></view>
+            </view>
+          </view>
+				</view>
+      </scrollview>
+			<view id="videoBox" height="100%"></view>
+		</layout>
+	</page>
+</manifest>

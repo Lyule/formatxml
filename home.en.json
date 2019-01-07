@@ -1,0 +1,352 @@
+{
+  "id": "home",
+  "schema": "v1",
+  "scripts": [
+    {
+      "src": "lua/controller/homeController.lua"
+    }
+  ],
+  "layout": {
+    "qName": "view",
+    "backgroundColor": "#EDEEF0",
+    "padding": "0 auto 0 auto",
+    "subitems": [
+      {
+        "qName": "image",
+        "src": "images/top_bg.png",
+        "scale": "fitWidth",
+        "margin": "0 0 auto 0"
+      },
+      {
+        "qName": "scrollview",
+        "margin": "0 0 0 0",
+        "id": "sv",
+        "subitems": [
+          {
+            "qName": "view",
+            "height": "44",
+            "id": "nav",
+            "marginTop": "20",
+            "subitems": [
+              {
+                "qName": "view",
+                "margin": "auto",
+                "subitems": [
+                  {
+                    "qName": "label",
+                    "id": "title",
+                    "fontSize": "16",
+                    "color": "#333333",
+                    "align": "center"
+                  }
+                ]
+              },
+              {
+                "qName": "view",
+                "marginLeft": "14",
+                "width": "30",
+                "subitems": [
+                  {
+                    "qName": "image",
+                    "src": "images/back.png",
+                    "width": "20",
+                    "margin": "12 auto auto auto",
+                    "scale": "fitWidth"
+                  },
+                  {
+                    "qName": "button",
+                    "id": "backBtn"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "qName": "view",
+            "marginTop": "87",
+            "id": "topTextBox",
+            "hidden": "true",
+            "margin": "0 8 0 8",
+            "backgroundImage": "images/top_text_bg.png",
+            "height": "46",
+            "overflow": "hidden",
+            "subitems": [
+              {
+                "qName": "label",
+                "id": "topText",
+                "color": "#333333",
+                "html": "true",
+                "fontSize": "13",
+                "align": "center",
+                "height": "46",
+                "marginTop": "16.5",
+                "verticalAlign": "top"
+              }
+            ]
+          },
+          {
+            "qName": "list",
+            "id": "list",
+            "margin": "137 8 50 8",
+            "template": {
+              "body": {
+                "qName": "view",
+                "subitems": [
+                  {
+                    "qName": "view",
+                    "height": "138",
+                    "width": "178",
+                    "margin": "auto auto auto 0",
+                    "subitems": [
+                      {
+                        "qName": "image",
+                        "src": "images/video_unit_bg.png",
+                        "height": "138",
+                        "width": "178"
+                      },
+                      {
+                        "qName": "image",
+                        "data": "coverImg1",
+                        "margin": "12.5 12.5 auto 12.5",
+                        "height": "90",
+                        "width": "154",
+                        "scale": "fill"
+                      },
+                      {
+                        "qName": "label",
+                        "data": "statusBg1",
+                        "height": "20",
+                        "width": "50",
+                        "backgroundColor": "#ef71a1",
+                        "cornerRadius": "10",
+                        "align": "center",
+                        "color": "#ffffff",
+                        "fontSize": "11",
+                        "margin": "7.5 auto auto 7.5"
+                      },
+                      {
+                        "qName": "image",
+                        "src": "images/list_play.png",
+                        "height": "32.5",
+                        "width": "32.5",
+                        "margin": "60 17.5 auto auto"
+                      },
+                      {
+                        "qName": "label",
+                        "data": "title1",
+                        "height": "30",
+                        "color": "#848081",
+                        "fontSize": "12",
+                        "margin": "103 auto auto 13"
+                      },
+                      {
+                        "qName": "image",
+                        "data": "boxMask1",
+                        "hidden": "true",
+                        "src": "images/video_unit_bg_mask.png",
+                        "height": "138",
+                        "width": "178"
+                      },
+                      {
+                        "qName": "image",
+                        "data": "lockMask1",
+                        "hidden": "true",
+                        "backgroundColor": "#000000",
+                        "marginLeft": "4.5",
+                        "marginTop": "4.5",
+                        "backgroundAlpha": "0.5",
+                        "cornerRadius": "2",
+                        "height": "128",
+                        "width": "169",
+                        "borderWidth": "0"
+                      },
+                      {
+                        "qName": "image",
+                        "data": "lockImage1",
+                        "hidden": "true",
+                        "src": "images/lock.png",
+                        "height": "18",
+                        "width": "16",
+                        "marginTop": "60",
+                        "marginLeft": "81"
+                      },
+                      {
+                        "qName": "button",
+                        "data": "btn1",
+                        "height": "138",
+                        "width": "178"
+                      }
+                    ]
+                  },
+                  {
+                    "qName": "view",
+                    "data": "box2",
+                    "hidden": "true",
+                    "height": "138",
+                    "width": "178",
+                    "margin": "auto 0 auto auto",
+                    "subitems": [
+                      {
+                        "qName": "image",
+                        "src": "images/video_unit_bg.png",
+                        "height": "138",
+                        "width": "178"
+                      },
+                      {
+                        "qName": "image",
+                        "data": "coverImg2",
+                        "margin": "12.5 12.5 auto 12.5",
+                        "height": "90",
+                        "width": "154",
+                        "scale": "fill"
+                      },
+                      {
+                        "qName": "label",
+                        "data": "statusBg2",
+                        "height": "20",
+                        "width": "50",
+                        "backgroundColor": "#ef71a1",
+                        "cornerRadius": "10",
+                        "align": "center",
+                        "color": "#ffffff",
+                        "fontSize": "11",
+                        "margin": "7.5 auto auto 7.5"
+                      },
+                      {
+                        "qName": "image",
+                        "src": "images/list_play.png",
+                        "height": "32.5",
+                        "width": "32.5",
+                        "margin": "60 17.5 auto auto"
+                      },
+                      {
+                        "qName": "label",
+                        "data": "title2",
+                        "height": "30",
+                        "color": "#848081",
+                        "fontSize": "12",
+                        "margin": "103 auto auto 13"
+                      },
+                      {
+                        "qName": "image",
+                        "data": "boxMask2",
+                        "hidden": "true",
+                        "src": "images/video_unit_bg_mask.png",
+                        "height": "138",
+                        "width": "178"
+                      },
+                      {
+                        "qName": "image",
+                        "data": "lockMask2",
+                        "hidden": "true",
+                        "backgroundColor": "#000000",
+                        "marginLeft": "4.5",
+                        "marginTop": "4.5",
+                        "backgroundAlpha": "0.5",
+                        "cornerRadius": "2",
+                        "height": "128",
+                        "width": "169",
+                        "borderWidth": "0"
+                      },
+                      {
+                        "qName": "image",
+                        "data": "lockImage2",
+                        "hidden": "true",
+                        "src": "images/lock.png",
+                        "height": "18",
+                        "width": "16",
+                        "marginTop": "60",
+                        "marginLeft": "81"
+                      },
+                      {
+                        "qName": "button",
+                        "data": "btn2",
+                        "height": "138",
+                        "width": "178"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "qName": "view",
+        "height": "50",
+        "margin": "auto 0 0 0",
+        "id": "bottomBox",
+        "hidden": "true",
+        "backgroundAlpha": "0.95",
+        "backgroundColor": "#ffffff",
+        "subitems": [
+          {
+            "qName": "view",
+            "id": "noPassBox",
+            "hidden": "true",
+            "subitems": [
+              {
+                "qName": "label",
+                "id": "bottomText1",
+                "height": "17",
+                "fontSize": "11",
+                "color": "#333333",
+                "margin": "10 auto auto 20"
+              },
+              {
+                "qName": "label",
+                "id": "bottomText2",
+                "height": "17",
+                "fontSize": "11",
+                "color": "#333333",
+                "margin": "27 auto auto 20"
+              },
+              {
+                "qName": "button",
+                "id": "noPassBtn",
+                "label": "参加线上考核",
+                "width": "150",
+                "height": "50",
+                "margin": "0 0 0 auto",
+                "align": "center",
+                "color": "#ffffff"
+              }
+            ]
+          },
+          {
+            "qName": "view",
+            "id": "passBox",
+            "hidden": "true",
+            "subitems": [
+              {
+                "qName": "button",
+                "id": "testRecordsBtn",
+                "label": "试题查看",
+                "height": "50",
+                "align": "center",
+                "color": "#333333",
+                "backgroundColor": "#ffffff",
+                "fontSize": "18",
+                "bold": "true",
+                "width": "50%"
+              },
+              {
+                "qName": "button",
+                "id": "passBtn",
+                "label": "查看证书",
+                "height": "50",
+                "align": "center",
+                "color": "#ffffff",
+                "backgroundColor": "#ed6596",
+                "fontSize": "18",
+                "bold": "true",
+                "margin": "0 0 0 50%"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
